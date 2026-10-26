@@ -40,8 +40,8 @@ High-performance single HTML bundle incorporating inline Tailwind CSS (via CDN) 
  Repository Structure
 
 STEMMate-Namibia/
-├── README.md         # Setup and architectural documentation (Task 12)
-└── index.html        # Complete production vertical slice bundle (Tasks 10–12)
+README.md         # Setup and architectural documentation (Task 12)
+index.html        # Complete production vertical slice bundle (Tasks 10–12)
 
 
 Setup & Local Execution Guide
@@ -52,53 +52,7 @@ Prerequisites
 
 Any modern web browser (Google Chrome, Microsoft Edge, Mozilla Firefox, Safari).
 
-Git (for cloning the repository).
 
-Step-by-Step Launch
-
-Clone the Repository
-
-git clone https://github.com/YOUR_GITHUB_USERNAME/STEMMate-Namibia.git
-cd STEMMate-Namibia
-
-
-Open the Application
-
-Option A (Direct File Launch): Double-click index.html inside your project directory to open it directly in your browser.
-
-Option B (VS Code Live Server - Recommended): Open the folder in VS Code, right-click index.html, and select Open with Live Server.
-
-🧪 Testing Sync Recovery (Task 12 Verification)
-
-To test and verify the sync recovery mechanics built for Task 12:
-
-Launch the app and log in or interact with the dashboard.
-
-Simulate Offline Mode:
-
-Open Browser Developer Tools (F12 or Ctrl + Shift + I).
-
-Go to the Network tab.
-
-Change the throttling dropdown from No throttling to Offline.
-
-Observe the UI status badge update to Offline.
-
-Perform Actions while Offline:
-
-Create or update tasks/sessions.
-
-Verify that items are added to the offline sync queue shown in the UI debug/logs pane.
-
-Simulate Network Restoration:
-
-Change the throttling dropdown back to No throttling (or Online).
-
-Observe the status badge change to Online and the automatic sync recovery process empty the queue and persist the synced state.
-
-Commit & Branching Strategy
-
-Main Branch: main (Production release branch)
 
 Feature Branch: feature/naobeb-tasks-10-12 (Task development and sync recovery implementation)
 
